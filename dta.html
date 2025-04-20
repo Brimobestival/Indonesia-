@@ -988,11 +988,11 @@ body{
     });
     const messageStatus = document.querySelector('#status');
     if (sendMessage.ok) // Update the user on if the message went through
-      messageStatus.textContent = "tree.html";
+      messageStatus.textContent = "";
     else
       messageStatus.textContent = "Message Failed to send :( " + (await sendMessage.text());
     e.target.reset(); // Clear the form fields.
-    window.location.href =;
+    window.location.href ="tree.html"";
   });
 
 
